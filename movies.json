@@ -1,12 +1,12 @@
 [
       {
-            "title": "The Shawshank Redemption",
+            "title": "Clueless",
             "iscore": 9.3,
             "rating": "R",
             "runtime": 142,
             "released": [1994, 10, 14],
             "country": "USA",
-            "posters": ["img/shawshank.jpg", "img/shawshank2.jpg", "img/shawshank3.jpg"],
+            "posters": ["img/clueless1.jpg", "img/clueless2.webp", "img/clueless3.jpg", "img/clueless4.jpg"],
             "imdb": "http://www.imdb.com/title/tt0111161",
             "website": "https://www.facebook.com/ShawshankRedemptionFilm",
             "likes": 1021,
@@ -14,7 +14,7 @@
             "posterindex": 0
       },
       {
-            "title": "The Godfather",
+            "title": "Mean Girls",
             "iscore": 9.2,
             "rating": "R",
             "runtime": 175,
@@ -28,7 +28,7 @@
             "posterindex": 0
       },
       {
-            "title": "The Godfather: Part II",
+            "title": "Legally Blonde",
             "iscore": 9.0,
             "rating": "R",
             "runtime": 202,
@@ -42,7 +42,7 @@
             "posterindex": 0
       },
       {
-            "title": "The Dark Knight",
+            "title": "10 Things I Hate About You",
             "iscore": 8.9,
             "rating": "PG-13",
             "runtime": 152,
@@ -56,7 +56,7 @@
             "posterindex": 0
       },
       {
-            "title": "Schindler's List",
+            "title": "White Chicks",
             "iscore": 8.9,
             "rating": "R",
             "runtime": 195,
@@ -67,6 +67,48 @@
             "website": "https://www.uphe.com/schindlers-list",
             "likes": 812,
             "dislikes": 101,
+            "posterindex": 0
+      },
+      {
+            "title": "How To Lose A Guy In 10 Days",
+            "iscore": 8.9,
+            "rating": "PG-13",
+            "runtime": 152,
+            "released": [2008, 7, 18],
+            "country": "USA",
+            "posters": ["img/darkknight.jpg", "img/darkknight2.jpg"],
+            "imdb": "http://www.imdb.com/title/tt0468569",
+            "website": "http://www.42entertainment.com/work/whysoserious",
+            "likes": 828,
+            "dislikes": 127,
+            "posterindex": 0
+      },
+      {
+            "title": "13 Going On 30",
+            "iscore": 8.9,
+            "rating": "PG-13",
+            "runtime": 152,
+            "released": [2008, 7, 18],
+            "country": "USA",
+            "posters": ["img/darkknight.jpg", "img/darkknight2.jpg"],
+            "imdb": "http://www.imdb.com/title/tt0468569",
+            "website": "http://www.42entertainment.com/work/whysoserious",
+            "likes": 828,
+            "dislikes": 127,
+            "posterindex": 0
+      },
+      {
+            "title": "Confessions Of A Shopaholic",
+            "iscore": 8.9,
+            "rating": "PG-13",
+            "runtime": 152,
+            "released": [2008, 7, 18],
+            "country": "USA",
+            "posters": ["img/darkknight.jpg", "img/darkknight2.jpg"],
+            "imdb": "http://www.imdb.com/title/tt0468569",
+            "website": "http://www.42entertainment.com/work/whysoserious",
+            "likes": 828,
+            "dislikes": 127,
             "posterindex": 0
       }
 ]
