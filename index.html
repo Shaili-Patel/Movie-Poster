@@ -31,12 +31,10 @@
 	        <h1 id="app_title">2000's Chick Flick Diaries</h1>
 	      </div> -->
 
-		  	  <h1>
-            <span>2000's</span>
-            <span>Chick</span>
-            <span>Flick</span>
-			<span>Diaries</span>
-        </h1>
+		<h1>
+  <span v-for="(word, index) in title.split(' ')" :key="index">{{ word }}</span>
+</h1>
+
 
 	    </div>
 
