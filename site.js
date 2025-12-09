@@ -19,7 +19,6 @@
 //
 // FOR STEP 16, ADD THREE OF YOUR OWN FAVORITE MOVIES WITH METADATA TO THE END OF THE JSON FILE LIST
 */
-
 const vue_app = Vue.createApp({
     created () {
         fetch('movies.json')
@@ -28,18 +27,31 @@ const vue_app = Vue.createApp({
                 this.movies = json;
             });
     },
+
     data() {
         return {
-            movies: [], // this will hold your movies.json data
-            title: "2000's Chick Flick Diaries",  
-            owner: "Shaili Patel",                
-            github: "https://github.com/Shaili-Patel/Movie-Poster"  
+            movies: [],
+            title: "2000's Chick Flick Diaries",
+            owner: "Shaili Patel",
+            github: "https://github.com/Shaili-Patel/Movie-Poster"
         };
     },
+
     methods: {
-        /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+        //  Switch postrs on click
+        nextPoster(movie) {
+            movie.posterindex++;
+
+            if (movie.posterindex >= movie.posters.length) {
+                movie.posterindex = 0;
+            }
+        }
     }
 });
 
 vue_app.mount("#vue_app");
+
+
+
+
 
