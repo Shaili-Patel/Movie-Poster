@@ -20,14 +20,13 @@
 // FOR STEP 16, ADD THREE OF YOUR OWN FAVORITE MOVIES WITH METADATA TO THE END OF THE JSON FILE LIST
 */
 const vue_app = Vue.createApp({
-    created () {
+    created() {
         fetch('movies.json')
             .then(response => response.json())
             .then(json => {
                 this.movies = json;
             });
     },
-
     data() {
         return {
             movies: [],
@@ -36,20 +35,18 @@ const vue_app = Vue.createApp({
             github: "https://github.com/Shaili-Patel/Movie-Poster"
         };
     },
-
     methods: {
-        //  Switch postrs on click
-        nextPoster(movie) {
-            movie.posterindex++;
-
-            if (movie.posterindex >= movie.posters.length) {
-                movie.posterindex = 0;
-            }
+        likeMovie(index) {
+            this.movies[index].likes++;
+        },
+        dislikeMovie(index) {
+            this.movies[index].dislikes++;
         }
     }
 });
 
 vue_app.mount("#vue_app");
+
 
 
 

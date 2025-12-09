@@ -17,10 +17,23 @@ body {
     color: white;
 }
 
+.likes:hover {
+    background-color: #86eedb;
+    color: white;
+}
+
+.dislikes:hover {
+    background-color: #e591bb;
+    color: white;
+}
+
+
 /* This stylizes the main page area */
 .main {
-    background-color: #f2f2f2;
+    background-color: #e591bb;
     padding: 40px 0;
+    border-radius: 15px;
+
 }
 
 /* This stylizes the poster area and poster images */
@@ -29,14 +42,32 @@ body {
     position: relative;
     padding: 20px;
     margin: 20px;
-    border-radius: 0;
-    background-color:#dddddd;
-}
+    border-radius: 15px;
+    background-color:#c93084;
+    }
+
+    .runtime{
+      font-family: "alasassy-caps", sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 25px;
+color: white;
+    }
+
 .thumbnail img {
     margin-top: 10px;
     margin-bottom: 30px;
     padding: 5px;
-    border: 2px dashed black;
+    border: 2px dashed rgb(255, 255, 255);
+}
+
+.poster {
+    width: 540px;       
+    height: 750px;     
+    object-fit: cover; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* This stylizes your "Poster X of Y" text */
@@ -51,17 +82,40 @@ body {
 /* This stylizes your Title and Rating Text */
 .title,
 .released {
-    color: #444;
-    margin: 0;
-    font-size: 18px;
-    font-weight: 800;
+  color: #ffffff;
+ font-family: "glodok" !important;
+font-weight: 200;
+font-style: normal;
+  margin: 0;
+  font-size: 23px;
 }
 .released,
 .rated {
-    color: #5d5d5d;
-    font-size: 14px;
+    color: #ffffff;
+    font-size: 20px;
     font-weight: 200;
 }
+
+.websites{
+       font-family: "alasassy-caps", sans-serif;
+font-weight: 400;
+font-style: normal;
+color: white;
+font-size: 20px;
+}
+
+.websites a {
+    color: #e591bb;      /* change to whatever color you want */
+    text-decoration: none; /* removes underline */
+    font-weight: 600;     /* optional, makes it stand out */
+    transition: 0.3s;     /* smooth hover effect */
+}
+
+.websites a:hover {
+    color: #e591bb;      /* change color on hover if you want */
+    text-decoration: underline; /* optional underline on hover */
+}
+
 
 /* This shapes your IMDB score area */
 .score {
