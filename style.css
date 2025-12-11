@@ -8,6 +8,19 @@ body {
     background-image: url(img/geometry.jpg);
 }
 
+.git-btn {
+  color: #c93084 !important;
+  border: 2px solid #c93084;
+  background-color: white !important;
+  transition: 0.3s;
+}
+
+.git-btn:hover {
+  background-color: #c93084 !important;
+  color: white !important;
+}
+
+
 /* This stylizes the header area */
 .header {
     padding: 15px;

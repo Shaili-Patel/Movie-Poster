@@ -21,34 +21,41 @@
 */
 const vue_app = Vue.createApp({
     created() {
+        // When the app is created, fetch the movies from movies.json
         fetch('movies.json')
-            .then(response => response.json())
+            .then(response => response.json()) // Converts response to JSON
             .then(json => {
-                this.movies = json;
+                // Add a posterindex property to each movie so we know which poster to show first
+                this.movies = json.map(movie => ({ ...movie, posterindex: 0 }));
             });
     },
     data() {
         return {
-            movies: [],
-            title: "2000's Chick Flick Diaries",
-            owner: "Shaili Patel",
-            github: "https://github.com/Shaili-Patel/Movie-Poster"
+            movies: [], // Array to store movies from JSON
+            title: "2000's Chick Flick Diaries", 
+            owner: "Shaili Patel", 
+            github: "https://github.com/Shaili-Patel/Movie-Poster" // Link to GitHub
         };
     },
     methods: {
         likeMovie(index) {
+            // Increase likes for the movie 
             this.movies[index].likes++;
         },
         dislikeMovie(index) {
+            // Increase dislikes for the movie 
             this.movies[index].dislikes++;
+        },
+        nextPoster(movie) {
+            // Move to the next poster for a movie
+            movie.posterindex++;
+            // If we've reached the last poster, go back to the first
+            if (movie.posterindex >= movie.posters.length) {
+                movie.posterindex = 0;
+            }
         }
     }
 });
 
+// Mount the Vue app to the HTML element with id "vue_app"
 vue_app.mount("#vue_app");
-
-
-
-
-
-

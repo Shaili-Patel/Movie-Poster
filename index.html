@@ -32,12 +32,12 @@
     <div class="col-md-6" v-for="(movie, index) in movies" :key="index">
         <div class="thumbnail">
 
-            <!-- Poster -->
+             <!-- Click changes poster -->
            <img class="poster img-fluid"
      :src="movie.posters[movie.posterindex]"
      @click="nextPoster(movie)" />
 
-
+			            <!-- Poster info -->
             <div class="imageInfo">
                 Poster {{ movie.posterindex + 1 }} of {{ movie.posters.length }}
             </div>
@@ -60,6 +60,8 @@
                 <a :href="movie.imdb" target="_blank">IMDB</a> |
                 <a :href="movie.website" target="_blank">Official</a>
             </p>
+
+        <!-- Likes and dislikes -->
 <div class="social">
     <p class="likes" @click="likeMovie(index)">
         <i class="bi bi-hand-thumbs-up"></i> {{ movie.likes }}
@@ -68,16 +70,17 @@
         <i class="bi bi-hand-thumbs-down"></i> {{ movie.dislikes }}
     </p>
 </div>
-
-
         </div>
     </div>
 </div>
 
-
+	    <!-- Footer with GitHub link and owner name -->
 	    <div class="footer">
 	        <div class="container">
-				<a id="github" class="btn btn-lg btn-warning" :href="github" target="_blank">
+<div class="my-3">
+    <!-- GitHub Button -->
+  <a id="github" class="btn git-btn btn-lg" :href="github" target="_blank">GitHub</a>
+</div>
 					<i class="bi bi-github me-2"></i>{{ owner }}
 		  		</a>
 	        </div>
